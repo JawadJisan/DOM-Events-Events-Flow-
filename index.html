@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <!-- Basic Events -->
+    <!-- 
+    1. Mouse Events
+    2. Keyboard Events -> keydown, keyup, keypress
+    3. Form Events
+    4. Window Events
+    5. Document Events
+     -->
+
+    <h1>Add Event Listeners</h1>
+    <button id="btn">Click Btn</button>
+
+    <!-- Method 2 -->
+    <button id="btn" onclick="alert('Clicked This BTN')">Button</button>
+    <br />
+    <button id="event-btn">Event</button>
+
+    <br />
+    <!-- <button id="click-btn">Click Me</button> -->
+    <p id="click-btn">Click Me</p>
+    <p id="clickCount">0</p>
+
+    <div
+      class="box"
+      style="width: 100px; height: 100px; background-color: black"
+    ></div>
+
+    <input id="search" type="text" />
+
+    <br />
+
+    <textarea name="" id="message" maxlength="100"></textarea>
+    <p><span id="charCount">0</span>/100 characters</p>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <form id="loginForm">
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+      />
+      <input type="password" name="password" id="password" />
+      <!-- <br /> -->
+      <button type="submit">Login</button>
+    </form>
+
+    <input type="text" id="basicInput" />
+
+    <!-- 
+    Event Flow
+    1. Event Propagation (Bubbling & Capturing) 
+        - Capturing phase
+        - Traget phase
+        - Bubbling phase
+    
+    2. Stop Propagation
+
+    3. Event Delegation
+
+    -->
+
+    <br />
+    <br />
+    <br />
+    <div id="grandparent">
+      GrandParent
+      <div id="parent">
+        Parent
+        <div id="child">Child</div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <ul class="todoList">
+      <li>Task 1 <button class="delete">X</button></li>
+      <li>Task 2 <button class="delete">X</button></li>
+      <li>Task 3 <button class="delete">X</button></li>
+    </ul>
+
+    <script src="events.js"></script>
+    <!-- <script src="keyboardEvent.js"></script> -->
+    <script src="formEvents.js"></script>
+    <script src="eventFlow.js"></script>
+  </body>
+</html>
